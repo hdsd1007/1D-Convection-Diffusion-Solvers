@@ -60,26 +60,26 @@ To compile and run these solvers, you will need:
 # Compilation
 Navigate to the project root directory in your terminal and compile the desired solver. For example, to compile the Upwind solver:
 
-'''Bash
+```bash
 g++ "solve1DConvection_DiffusionUpwind.cpp" -o 1D_Convection_Diffusion_Upwind.exe -lmatplotlib-cpp -I/usr/include/python3.8 -lpython3.8
 ### (Adjust Python include path and library names as per your system setup and OS)
-'''
+```
 You can optionally create an executables folder to store your compiled binaries separately:
 
-'''Bash
+```bash
 mkdir executables
 g++ "solve1DConvection_DiffusionUpwind.cpp" -o executables/1D_Convection_Diffusion_Upwind.exe ...
-'''
+```
 
 Repeat this compilation process for solve1DDiffusion.cpp and solve1DConvection_Diffusion.cpp to create their respective executables.
 
 Running the Solvers
 Once compiled, you can run the executables from your terminal. If you placed them in an executables folder:
 
-'''Bash
+```bash
 ./executables/1D_Convection_Diffusion_Upwind.exe
 The output, including the temperature distribution plot (for the Upwind solver), will be displayed.
-'''
+```
 
 Project Structure
 .
