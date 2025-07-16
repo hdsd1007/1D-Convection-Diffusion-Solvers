@@ -29,7 +29,7 @@ Where:
 
 **Upwind Differencing Scheme**: 
 The solve1DConvection_DiffusionUpwind.cpp specifically utilizes the Upwind Differencing Scheme for the convective term. This scheme approximates the convective flux at a cell face using the value of 
-phi from the upstream node (in the direction of flow). This approach inherently introduces numerical diffusion but is highly effective in maintaining solution stability and preventing non-physical oscillations, especially when the Peclet number ($$ Pe = \frac{U L}{\Gamma} $$) is high, indicating convection-dominated flow.
+phi from the upstream node (in the direction of flow). This approach inherently introduces numerical diffusion but is highly effective in maintaining solution stability and preventing non-physical oscillations, especially when the Peclet number ($ Pe = \frac{U L}{\Gamma} $) is high, indicating convection-dominated flow.
 
 The discrete form of the coefficients for the Upwind scheme is derived based on the direction of flow to ensure proper approximation of the convective term.
 
@@ -88,7 +88,8 @@ Once compiled, you can run the executables from your terminal. If you placed the
 └── README.md
 
 # Other files in your local directory are ignored by .gitignore as per your setup.
-Contributing
 ```
+
+# Contributing
 
 Feel free to fork this repository, open issues, or submit pull requests if you have suggestions for improvements or bug fixes.
