@@ -30,7 +30,7 @@ Where:
 **Upwind Differencing Scheme**: 
 The solve1DConvection_DiffusionUpwind.cpp specifically utilizes the Upwind Differencing Scheme for the convective term. This scheme approximates the convective flux at a cell face using the value of 
 phi from the upstream node (in the direction of flow). This approach inherently introduces numerical diffusion but is highly effective in maintaining solution stability and preventing non-physical oscillations, especially when the Peclet number ($$ Pe=
-\frac{U * L}{\gamma} $$) is high, indicating convection-dominated flow.
+\frac{U L}{\gamma} $$) is high, indicating convection-dominated flow.
 
 The discrete form of the coefficients for the Upwind scheme is derived based on the direction of flow to ensure proper approximation of the convective term.
 
@@ -78,15 +78,16 @@ Once compiled, you can run the executables from your terminal. If you placed the
 
 ```bash
 ./executables/1D_Convection_Diffusion_Upwind.exe
-The output, including the temperature distribution plot (for the Upwind solver), will be displayed.
+# The output, including the temperature distribution plot (for the Upwind solver), will be displayed.
 ```
 
-Project Structure
-.
+# Project Structure
+```.
 ├── solve1DDiffusion.cpp
 ├── solve1DConvection_Diffusion.cpp
 ├── solve1DConvection_DiffusionUpwind.cpp
 └── README.md
+```
 
 # Other files in your local directory are ignored by .gitignore as per your setup.
 Contributing
