@@ -17,13 +17,13 @@ $$ \nabla \cdot (\rho c_p U \phi) = \nabla \cdot (\gamma \nabla \phi) + S $$
 
 Where:
 
-- $phi$ is the dependent variable (e.g., temperature, concentration).
+- $\phi$ is the dependent variable (e.g., temperature, concentration).
 
-- $rho$ is the fluid density.
+- $\rho$ is the fluid density.
 
 - U is the fluid velocity.
 
-- $gamma$ is the diffusion coefficient (e.g., thermal conductivity for heat transfer, mass diffusivity for species transport).
+- $\gamma$ is the diffusion coefficient (e.g., thermal conductivity for heat transfer, mass diffusivity for species transport).
 
 - S is the source term.
 
